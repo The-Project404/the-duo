@@ -1,0 +1,162 @@
+      /*the main page */
+      .header{
+        display: block;
+        height: 100px;
+        background-color: #f7f7f7;
+      }
+      #logo{
+        height: 100px;
+        width: 100px;
+      }
+
+      .logo-container{
+        height: 100px;
+        width: 100px;
+        float: left;
+        background-color: beige ;
+      }
+      .most-rated{
+        height: 40px;
+        width: 150px;
+        float: left;
+        
+
+      }
+      .login{
+        height: 40px;
+        width: 90px;
+        float: right;
+        ;
+      }
+      .sing-up{
+        height: 40px;
+        width:  90px;
+        float: right;
+        
+      }
+      .categories{
+        height: 40px;
+        width: 90px;
+        float: left;
+       
+      }
+
+.slider{
+  margin:50px auto;
+  width:50%;
+}
+ 
+.img-box img{
+  width:100%;
+}
+
+.btn{
+  border:none;
+  outline:none;
+  background:#888;
+  padding:10px 30px;
+  font-size: 20px;
+  color:#ddd;
+  cursor: pointer;
+  margin:10px auto;      
+}
+
+.btn:hover{
+  background: #111;
+}
+      
+
+
+
+      /*the sing up page*/ 
+      * {
+       box-sizing: border-box;
+       padding: 0;
+       margin: 0;
+      }
+
+      body {
+         
+          background: #344a72;
+        
+      }
+
+      a {
+      text-decoration: none;
+      }
+
+      #container {
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 150px;
+       max-width: fit-content;
+        padding: 70px 50px;
+        background: white;
+        
+      
+      }
+
+      .form-wrap {
+       
+       font-family: 'Raleway';
+       font-style: normal;
+       font-weight: 400;
+       src: url(https://fonts.gstatic.com/s/raleway/v27/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCFPrEHJA.woff2) format('woff2');
+       
+      }
+
+      .form-wrap h1,
+      .form-wrap p {
+        text-align: center;
+      }
+
+      .form-wrap .form-group {
+        text-align: justify;
+      }
+
+      
+      .form-wrap .form-group input {
+        padding: 10px 100px;
+      }
+
+      .form-wrap button {
+        background: #49c1a2;
+       color: #fff;
+       border: none;
+       font-size: 16px;
+       padding: 10px 300px;
+       border-radius: 5px;
+       cursor: pointer;
+      
+       
+      }
+
+      .form-wrap button:hover {
+        background: #37a08e;
+
+      }
+
+      .form-wrap .bottom-text {
+        font-family: 'Raleway';
+       font-style: normal;
+       font-weight: 400;
+       src: url(https://fonts.gstatic.com/s/raleway/v27/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCFPrEHJA.woff2) format('woff2');
+        font-size: small;
+      }
+
+      footer {
+       text-align: center;
+       font-family: 'Raleway';
+       font-style: normal;
+       font-weight: 400;
+       src: url(https://fonts.gstatic.com/s/raleway/v27/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCFPrEHJA.woff2) format('woff2');
+      }
+
+      footer a {
+        color:#49c1a2
+      }
+
+
+
+
+
