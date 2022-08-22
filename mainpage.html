@@ -16,20 +16,26 @@
             <div class="logo-container"><img id="logo" src="logo.jpg"></div>
             <div class="most-rated">Most rated</div>
              <div class="categories">categories</div>
-            <div class="login"><a href="sing up.html" unchecked>login</a></div>
-            <div class="sing-up"><a href="sing up.html" unchecked>sign-up</a></div>
+            <div class="login"><a href="login.html" unchecked>login</a></div>
+            <div class="sing-up"><a href="sign up.html" unchecked>sign-up</a></div>
            
             </header>
             <div class="container">
             <div class="slider">
-            <div class="img-box">
-                <img src="images/a.jpg" class="slider-img">
+              <div class="img-box">
+                <img src="images/logo.jpg" id="mainImage" class="slider-img">
+              </div>
+              <input id="bet" type="text" placeholder="Enter your price in $">
+              <button class="btn" onclick="Bet()">Bet</button>
+              <button class="btn" onclick="prev()">Prev</button>
+              <button class="btn" onclick="next()">Next</button>
+            </div>
+            <button class="btn" onclick="returnBet()">Show current bet</button>
+            <p id="currentBet"></p>
             </div>
 
-            <button class="btn" onclick="prev()">Prev</button>
-            <button class="btn" onclick="next()">Next</button>
-            </div>
-        <footer class="footer"> support </footer>
+            <footer class="footer"> support </footer>
+            
 
     </main>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
