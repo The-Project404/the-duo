@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="UTF-8">
     <title>Art Mucem</title>
-    
-
-    
     <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
   </head>
   
@@ -16,38 +13,22 @@
 
         <header class="header">
 
-            <div class="logo-container"><img src="LOGO"></div>// float left
-            <div class="most-rated">//to new pg html of most rated </div>//float left
-            <div class="create-account">to create account</div>//float right
-            <div class="sign-up">//to log screen</div>//float right
-            <div class="categories">////filter teh data</div>//float right
-            
-
-            
-
-        </header>
-
-        <section class="main-section">
-
-            <div class="content-left">
-
-                <div class="profile-image-container" ></div>
-
-              
-        
-            <div class="left arrow">clickme</div>
-            <div class="content-mid">
-
-                <section class="content-container"> 
-                    //sold/or not
-                    //purshase
-                    //bid on element 
-                </section>
-                <div class="right arrow">clickme</div>
+            <div class="logo-container"><img id="logo" src="logo.jpg"></div>
+            <div class="most-rated">Most rated</div>
+             <div class="categories">categories</div>
+            <div class="login"><a href="sing up.html" unchecked>login</a></div>
+            <div class="sing-up"><a href="sing up.html" unchecked>sign-up</a></div>
+           
+            </header>
+            <div class="container">
+            <div class="slider">
+            <div class="img-box">
+                <img src="images/a.jpg" class="slider-img">
             </div>
 
-        </section>
-
+            <button class="btn" onclick="prev()">Prev</button>
+            <button class="btn" onclick="next()">Next</button>
+            </div>
         <footer class="footer"> support </footer>
 
     </main>
