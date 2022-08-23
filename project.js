@@ -1,4 +1,4 @@
-/*
+
 var images = [
 {
     category:"nft",
@@ -39,7 +39,7 @@ var images = [
 },
 
 ];
-*/
+
 
 
 
@@ -61,7 +61,7 @@ $('.container').css({
     })
 
 var slider_img = document.querySelector('.slider-img');
-var images = ['a.jpg', 'b.jpg','c.jpg','d.jpg','e.jpg','f.jpg','g.jpg','h.jpg','i.jpg','j.jpg','k.jpg', 'monalisa.jpg' ];
+//var images = ['a.jpg', 'b.jpg','c.jpg','d.jpg','e.jpg','f.jpg','g.jpg','h.jpg','i.jpg','j.jpg','k.jpg', 'monalisa.jpg' ];
 var accounts = []
 var currentBets = [0,0,0]
 var i = 0;
@@ -81,7 +81,7 @@ function next(){
 
 function setImg(){
   var myImage = document.getElementById("mainImage");
-  myImage.setAttribute("src","images/" + images[i]);
+  myImage.setAttribute("src","images/" + images[i].imgSrc);
   //return slider_img.setAttribute('src', "images/"+images[i]);
   
 }
@@ -109,8 +109,11 @@ function checkSignUp(){
     return success;
   }
 }
-function checkPass(){
-  return true;
+function checkPass(password,passwordConfirm){
+  if (password===passwordConfirm){
+    return true;
+  }
+  return false;
 }
 function checkEmail() {
   return true;
