@@ -162,8 +162,16 @@
         background-size: 100%
       }
 
+.img-box{
+  height: 100%;
+  width: 100%;
+}
 
-
-
+#mainImage{
+ 
+  margin-top: 119px;
+    margin-bottom: 23px;
+    height: 700px
+}
 
 

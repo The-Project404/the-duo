@@ -9,7 +9,7 @@ $('.container').css({
     })
 
 var slider_img = document.querySelector('.slider-img');
-var images = ['unnamed.jpg', 'NFT-art.jpg', 'monalisa.jpg' ];
+var images = ['a.jpg', 'b.jpg','c.jpg','d.jpg','e.jpg','f.jpg','g.jpg','h.jpg','i.jpg','j.jpg','k.jpg', 'monalisa.jpg' ];
 var accounts = []
 var currentBets = [0,0,0]
 var i = 0;
