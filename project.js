@@ -1,4 +1,3 @@
-
 var images = [
 {
     category:"nft",
@@ -39,7 +38,6 @@ var images = [
 },
 
 ];
-
 
 
 
