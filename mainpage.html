@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Art Mucem</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+  </head>
+  
+  <body>
+    <main class="main-Mucem">
+
+        <header class="header">
+
+            <div class="logo-container"><img id="logo" src="logo.jpg"></div>
+             <div class="categories">categories
+             <input type="text" id ="search" class="searchTerm" placeholder="What are you looking for?">
+           <button type="submit" class="searchButton">
+            <span style='font-size:20px;top: 3px;'>&#127859;</span>
+          </button>
+             </div>
+            <div class="login"><a href="login.html" unchecked>login</a></div>
+            <div class="sing-up"><a href="sign up.html" unchecked>sign-up</a></div>
+           
+            </header>
+            <div class="chetheb">
+            <div class="slider">
+              <div class="img-box">
+                <img src="images/Monalisa.jpg" id="mainImage" class="slider-img" height="50%" width="50%">
+              </div>
+              <input id="bet" type="text" placeholder="Enter your price in $">
+              <button class="btn" onclick="Bet()">Bid</button>
+              <button class="btn" onclick="prev()">Prev</button>
+              <button class="btn" onclick="next()">Next</button>
+            </div>
+            <button class="btn" onclick="returnBet()">Show current bid</button>
+            <p id="currentBet"></p>
+            </div>
+
+            <footer class="footer"> support </footer>
+            
+<!-- //ggg -->
+    </main>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="project.js"></script>
+   
+  </body>
+</html>

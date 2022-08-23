@@ -1,2 +1,1 @@
-# the-duo
-project
+Good luck
