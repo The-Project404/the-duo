@@ -14,6 +14,7 @@ var images = ['unnamed.jpg', 'NFT-art.jpg', 'monalisa.jpg' ];
 var accounts = []
 var currentBets = [0,0,0]
 var i = 0;
+///aefaefaef
 
 function prev(){
   if(i <= 0){ i = images.length; 
