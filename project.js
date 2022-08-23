@@ -39,15 +39,6 @@ var images = [
 
 ];
 
-
-
-
-
-
-
-
-
-
 // the containair of img
 // container styling
 $('.container').css({
@@ -158,3 +149,23 @@ function displayElement(arr){
 }
 displayElement(data)
 //img.attr('class=categories')
+
+var categorie=$("input[type='radio'][name='drone']:checked").val()
+var src =$("input[type='text']").val()
+function function_name(categorie,src) {
+  var upload=[{categorie:categorie,imgSrc:src}]
+  return images.concat(upload)
+}
+$('.buttonon').click(function_name(categorie,src))
+ 
+
+ function filterCat(){
+  var cate = document.getElementById("search").value;
+  var tempArray = []
+  for(var i=0;i<images.length;i++){
+    if (images[i].category === cate){
+      tempArray.push(images[i]);
+    }
+  }
+  images = tempArray;
+ }
