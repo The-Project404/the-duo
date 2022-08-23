@@ -1,7 +1,6 @@
 // the containair of img
 // container styling
 $('.container').css({
-  'background':'#fff8e7',
   'height':'1119px',
   'widht':'100%',
   'display':'flex',
