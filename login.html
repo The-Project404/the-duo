@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Styling</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    
+    
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Login</h1>
+        <p>Connect using your email and password</p>
+        <br>
+        <form>
+          <div class="form-group">
+            <h4><label for="email">Email</label></h4>
+            <input type="email" name="email" id="emailLogin" />
+          </div>
+          <div class="form-group">
+            <h4><label for="password">Password</label></h4>
+            <input type="password" name="password" id="passwordLogin" />
+          </div>
+          <p id="ResultatLogin"></p>
+          <br><br>
+          <button type="submit" class="btn" onclick="checkLogin()">Login</button>
+          <p class="bottom-text">
+            By clicking the Login button, you agree to our
+            <a href="#">Terms & Conditions</a> and
+            <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
+    </div>
+      <footer>
+        <p>Don't have an account? <a href="sign up.html">Sign up here</a></p>
+      </footer>
+    
+  </body>
+</html>

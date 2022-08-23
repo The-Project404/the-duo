@@ -1,3 +1,1 @@
-# the-duo
-project
-hello world
+Good luck
