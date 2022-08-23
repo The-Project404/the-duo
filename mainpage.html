@@ -14,23 +14,27 @@
         <header class="header">
 
             <div class="logo-container"><img id="logo" src="logo.jpg"></div>
-            <div class="most-rated">Most rated</div>
-             <div class="categories">categories</div>
+             <div class="categories">categories
+             <input type="text" id ="search" class="searchTerm" placeholder="What are you looking for?">
+           <button type="submit" class="searchButton">
+            <span style='font-size:20px;top: 3px;'>&#127859;</span>
+          </button>
+             </div>
             <div class="login"><a href="login.html" unchecked>login</a></div>
             <div class="sing-up"><a href="sign up.html" unchecked>sign-up</a></div>
            
             </header>
-            <div class="container">
+            <div class="chetheb">
             <div class="slider">
               <div class="img-box">
-                <img src="images/logo.jpg" id="mainImage" class="slider-img">
+                <img src="images/Monalisa.jpg" id="mainImage" class="slider-img" height="50%" width="50%">
               </div>
               <input id="bet" type="text" placeholder="Enter your price in $">
-              <button class="btn" onclick="Bet()">Bet</button>
+              <button class="btn" onclick="Bet()">Bid</button>
               <button class="btn" onclick="prev()">Prev</button>
               <button class="btn" onclick="next()">Next</button>
             </div>
-            <button class="btn" onclick="returnBet()">Show current bet</button>
+            <button class="btn" onclick="returnBet()">Show current bid</button>
             <p id="currentBet"></p>
             </div>
 

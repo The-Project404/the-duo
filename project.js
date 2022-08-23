@@ -1,7 +1,58 @@
+/*
+var images = [
+{
+    category:"nft",
+    imgSrc:"a.jpg"
+},{
+    category:"nft",
+    imgSrc:"b.jpg"
+},{
+    category:"nft",
+    imgSrc:"c.jpg"
+},{
+    category:"nft",
+    imgSrc:"h.jpg"
+},{
+    category:"nft",
+    imgSrc:"i.jpg"
+},{
+    category:"nft",
+    imgSrc:"j.jpg"
+},{
+    category:"painting",
+    imgSrc:"d.jpg"
+},{
+    category:"painting",
+    imgSrc:"e.jpg"
+},{
+    category:"painting",
+    imgSrc:"f.jpg"
+},{
+    category:"painting",
+    imgSrc:"g.jpg"
+},{
+    category:"painting",
+    imgSrc:"k.jpg"
+},{
+    category:"painting",
+    imgSrc:"monalisa.jpg"
+},
+
+];
+*/
+
+
+
+
+
+
+
+
+
+
 // the containair of img
 // container styling
 $('.container').css({
-  'background':'#fff8e7',
   'height':'1119px',
   'widht':'100%',
   'display':'flex',
@@ -10,7 +61,7 @@ $('.container').css({
     })
 
 var slider_img = document.querySelector('.slider-img');
-var images = ['unnamed.jpg', 'NFT-art.jpg', 'monalisa.jpg' ];
+var images = ['a.jpg', 'b.jpg','c.jpg','d.jpg','e.jpg','f.jpg','g.jpg','h.jpg','i.jpg','j.jpg','k.jpg', 'monalisa.jpg' ];
 var accounts = []
 var currentBets = [0,0,0]
 var i = 0;
@@ -73,3 +124,36 @@ function checkLogin(){
     }
   }
 }
+var each = function (coll,func){
+    if (Array.isArray(coll)){
+        for (var i =0;i<coll.length;i++){
+        func(coll[i],i)
+    }
+    }
+    else {
+        for (var key in coll){
+            func(coll[key],key)
+        }
+    }
+}
+
+var filter = function(array,predicate){
+var acc = [];
+each(array,function(e,i){
+    if (predicate(e,i)){
+        acc.push(e)
+    }
+})
+return acc;
+}
+function displayElement(arr){
+    each(arr,function(e){
+        var img=$("<img>")
+        img.attr("src",e.imgSrc)
+        var div=$("<div class='grid-item'></div>")
+        div.append(img)
+        div.appendTo('#container')
+    })
+}
+displayElement(data)
+//img.attr('class=categories')

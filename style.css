@@ -75,7 +75,7 @@
        margin: 0;
       }
 
-      body {
+      .body {
          
           background: #344a72;
         
@@ -155,8 +155,23 @@
       footer a {
         color:#49c1a2
       }
+      .chetheb{
 
+        background-image:url('a.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%
+      }
 
+.img-box{
+  height: 100%;
+  width: 100%;
+}
 
+#mainImage{
+ 
+  margin-top: 350px;
+    margin-bottom: 23px;
+    height: 700px
+}
 
 
